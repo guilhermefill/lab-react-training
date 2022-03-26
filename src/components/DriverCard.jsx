@@ -4,6 +4,12 @@ const DriverCard = (props) => {
   const { name, rating, img, car } = props;
   const divStyle = {
     display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#455EB5',
+    borderRadius: '10px',
+    marginBottom: '10px',
+    padding: '10px',
   };
   const imgStyle = {
     height: '100px',
@@ -25,7 +31,7 @@ const DriverCard = (props) => {
       </div>
       <div style={infoStyle}>
         <h3 style={changeMargin}>{name}</h3>
-        <Rating style={changeMargin}>{rating}</Rating>
+        <Rating>{rating}</Rating>
         <p style={changeMargin}>
           {car.model} - {car.licensePlate}
         </p>
