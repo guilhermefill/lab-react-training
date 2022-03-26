@@ -13,3 +13,7 @@
 .info p {
   margin: 0.4rem;
 }
+
+.credit-card {
+  display: flex;
+}
